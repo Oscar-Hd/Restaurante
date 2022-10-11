@@ -9,6 +9,8 @@ import { LoginComponent } from './vistas/login/login.component';
 import { DashboardComponent } from './vistas/dashboard/dashboard.component';
 import { NuevoComponent } from './vistas/nuevo/nuevo.component';
 import { EditarComponent } from './vistas/editar/editar.component';
+import { RestServices } from './plantillas/header/restaurantes.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,12 @@ import { EditarComponent } from './vistas/editar/editar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    RestServices
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
