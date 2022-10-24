@@ -1,2 +1,24 @@
-<p>footer works!</p>
-//hola
+<div class="jumbotron mt-5">
+  <h2 class="heading"> Busqueda de Restaurantes por Estados</h2>
+  <div class="row mt-3 center">
+    <div class="col-lg-8 offset-lg-2">
+      <form>
+        <div class="form-group mt-3">
+          <select name="Estado" class="form-select form-control-lg">
+            <option [value]="Estados" *ngFor="let Esti of Estados">{{Esti.nombre}}</option>
+          </select>
+        </div>
+        <div class="form-group mt-3">
+          <select name="Municipio" class="form-select form-control-lg">
+            <option>Candelaria</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </form>
+      <button class="btn btn-primary btn-block btn-lg mt-3">Buscar</button>
+   </div>
+  </div>
+</div>

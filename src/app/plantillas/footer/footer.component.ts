@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  Estados: any[] = [
+      { value: 'Estado', nombre: 'estados'},
+      {value: 'Est', nombre: 'esta'},
+  ];
+
+  Municipios: any[] = [
+    { value: 'Can', nombre: 'Candelaria'},
+    {value: 'Esc', nombre: 'Escarcega'},
+]
+
   constructor() { }
 
   ngOnInit(): void {
